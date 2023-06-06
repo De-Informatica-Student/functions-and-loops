@@ -1,26 +1,25 @@
-// Variabele voor het opslaan van waardes die verplaats worden
-int returnValue = 0;
-int nextLine = 0;
-int startingLine = 0;
-
 // De main functie is het begin van het programma
 int main() {
-    // Maak een getal aan
-    int x = 5;
+    // Maak een plek voor de return waarde
+    int returnValue = 0;
 
-    // Verdubbel het met de doubler
-    nextLine = &&doubled;
-    goto doubler;
-    int y = returnValue;
+    // Het begin van het programma
+    main:
+        // Maak een getal aan
+        int x = 5;
+        goto doubler;
 
-    // Label voor een plek in het programma
+    // Locatie in het programma
     doubled:
+        // Save the result
+        int y = returnValue;
+
         // Het programma is succesvol afgerond
         return 0;
 
-    // Label voor een plek in het programma
+    // Locatie in het programma
     doubler:
         // Functie om een getal te verdubbelen
         returnValue = x * 2;
-        goto *nextLine;
+        goto doubled;
 }
